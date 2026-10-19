@@ -1,0 +1,90 @@
+progress-style = true
+
+#theme = Aura
+# theme = Ayu
+theme = Aura
+
+
+#adds tabs to the gtk titlebar, instead of below
+# gtk-titlebar = true
+gtk-titlebar-style = tabs
+
+background = 09090d
+# background-blur = true
+background-opacity = 0.95
+
+# font-family = "Hasklug Nerd Font"
+font-family = "MartianMono Nerd Font Mono"
+font-size = 11.25
+adjust-cell-height = 4
+
+#### Multiplexing keybindings
+# the > is used to combine keys. creating the leader
+keybind = ctrl+a>v=new_split:right
+keybind = ctrl+a>h=new_split:down
+
+keybind = unconsumed:ctrl+h=goto_split:left
+keybind = unconsumed:ctrl+j=goto_split:bottom
+keybind = unconsumed:ctrl+k=goto_split:top
+keybind = unconsumed:ctrl+l=goto_split:right
+
+keybind = alt+shift+h=previous_tab
+keybind = alt+shift+l=next_tab
+
+keybind = unconsumed:ctrl+shift+h=resize_split:left,10
+keybind = unconsumed:ctrl+shift+j=resize_split:down,10
+keybind = unconsumed:ctrl+shift+k=resize_split:up,10
+keybind = unconsumed:ctrl+shift+l=resize_split:right,10
+
+##### cursor shaders
+# custom-shader = shaders/cursor_smear_custom.glsl
+# custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/glow.glsl
+custom-shader = shaders/cursor_glide.glsl
+
+# background-blur-radius = 20
+
+# font-family = "Cascadia Code NF"
+# font-family = "Monoid Nerd Font Retina"
+# font-family = "JetBrainsMono NF"
+# font-family = "CommitMono"
+# font-family = "CommitMonoEdited"
+# font-family = "JetBrainsMono"
+# font-family = "scientifica"
+# font-family = "monospace"
+# font-family = "ZedMono Nerd Font Mono"
+# font-family = "Meslo"
+# font-family = "Hack Nerd Font Mono"
+# font-family = "CommitMonocommit-heightened"
+# font-family = "MesloLGL Nerd Font"
+# font-family = "Space Mono"
+# font-family = "Maple Mono NF"
+# font-family = "JetBrainsMono Nerd Font"
+# font-family = "Monofur Nerd Font"
+# font-family = "Ioskeley Mono"
+# font-family = "0xProto"
+# font-family = "Code Saver"
+# font-family = "FantasqueSansM Nerd Font Mono"
+
+
+# This is the configuration file for Ghostty.
+#
+#   /home/mrrodbot/.config/ghostty/config
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
