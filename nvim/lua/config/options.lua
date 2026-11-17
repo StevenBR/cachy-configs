@@ -13,6 +13,7 @@ local opt = vim.opt
 opt.textwidth = 80
 opt.colorcolumn = "+1" -- Marker appears 1 column after textwidth
 
+opt.relativenumber = true
 -- Set global options for 4-space indentation
 opt.tabstop = 4 -- Number of spaces a <Tab> in the file counts for
 opt.shiftwidth = 4 -- Number of spaces to use for auto-indent
