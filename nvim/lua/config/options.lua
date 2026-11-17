@@ -22,3 +22,11 @@ opt.expandtab = true -- Convert <Tab> to spaces
 -- opt.guicursor = "n-v-c:block,i-ci:ver25-blinkwait500-blinkon400-blinkoff400"
 -- opt.guicursor = "n-v-c:block,i-ci:ver25-blinkwait500-blinkon500-blinkoff500"
 opt.guicursor = "n-v-c:block-blinkwait100-blinkon500-blinkoff500,i-ci:ver25-blinkwait100-blinkon500-blinkoff500"
+
+-- colors the windows split line
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#ff007f", bg = "NONE" })
+  end,
+})
+
