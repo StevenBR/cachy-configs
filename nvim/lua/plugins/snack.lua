@@ -36,6 +36,7 @@ return {
         },
         explorer = {
           layout = { layout = { position = "right" } },
+          -- layout = { layout = { preset = "vertical" } }, -- if you want to open in the center
           -- layout = { layout = { position = "float" } },
           follow_file = false,
           jump = { close = false },
